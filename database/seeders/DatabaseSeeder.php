@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Author;
+use App\Models\Book;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -25,5 +26,6 @@ class DatabaseSeeder extends Seeder
 
         User::factory(5)->create();
         Author::factory(5)->create();
+        Book::factory(50)->create();
     }
 }
